@@ -1,0 +1,10 @@
+# Railway - Albion Guild Bot
+# Los volúmenes se configuran en el dashboard (no vía archivo)
+
+[build]
+builder = "nixpacks"
+
+[deploy]
+startCommand = "npm start"
+restartPolicyType = "on-failure"
+restartPolicyMaxRetries = 10

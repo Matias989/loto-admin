@@ -5,7 +5,7 @@ import { handleInteraction } from './handlers/interactions.js';
 import { setupPanel } from './handlers/panel.js';
 config();
 
-// Servidor HTTP mínimo para health checks (Fly.io, Railway). Solo si PORT está definido (producción)
+// Servidor HTTP mínimo para health checks. Solo si PORT está definido (producción)
 const port = process.env.PORT;
 if (port) {
   createServer((_, res) => {

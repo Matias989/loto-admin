@@ -8,7 +8,8 @@
     "start": "node src/index.js",
     "deploy": "node src/deploy-commands.js",
     "dev": "node --watch src/index.js",
-    "clear-db": "node scripts/clear-database.js"
+    "clear-db": "node scripts/clear-database.js",
+    "backup-db": "node scripts/backup-database.js"
   },
   "keywords": [
     "discord",

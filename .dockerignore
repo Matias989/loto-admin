@@ -1,8 +1,0 @@
-node_modules
-.env
-.git
-*.md
-.DS_Store
-data/*.db
-*.sqlite
-logs

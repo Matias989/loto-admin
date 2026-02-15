@@ -1,0 +1,3 @@
+# Nixpacks - necesario para compilar better-sqlite3
+[phases.setup]
+nixPkgs = ["python311", "gcc"]

@@ -2,7 +2,8 @@
 # Los volúmenes se configuran en el dashboard (no vía archivo)
 
 [build]
-builder = "nixpacks"
+builder = "DOCKERFILE"
+dockerfilePath = "Dockerfile"
 
 [deploy]
 startCommand = "npm start"

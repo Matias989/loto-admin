@@ -1,0 +1,29 @@
+{
+  "name": "albion-guild-bot",
+  "version": "1.0.0",
+  "description": "Bot de Discord para gestión y organización de gremios de Albion Online",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "deploy": "node src/deploy-commands.js",
+    "dev": "node --watch src/index.js",
+    "clear-db": "node scripts/clear-database.js"
+  },
+  "keywords": [
+    "discord",
+    "albion-online",
+    "guild",
+    "bot"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "better-sqlite3": "^11.5.0",
+    "dotenv": "^16.4.5"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

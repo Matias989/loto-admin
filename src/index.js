@@ -1,8 +1,18 @@
+import { createServer } from 'http';
 import { Client, Events, GatewayIntentBits, Partials } from 'discord.js';
 import { config } from 'dotenv';
 import { handleInteraction } from './handlers/interactions.js';
 import { setupPanel } from './handlers/panel.js';
 config();
+
+// Servidor HTTP mínimo para health checks (Fly.io, Railway). Solo si PORT está definido (producción)
+const port = process.env.PORT;
+if (port) {
+  createServer((_, res) => {
+    res.writeHead(200);
+    res.end('ok');
+  }).listen(port, () => console.log(`Health check en :${port}`));
+}
 
 const client = new Client({
   intents: [GatewayIntentBits.Guilds],

@@ -6,7 +6,7 @@ import { mkdirSync, existsSync } from 'fs';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const dataDir = join(__dirname, '../../data');
+const dataDir = process.env.DATA_DIR || join(__dirname, '../../data');
 if (!existsSync(dataDir)) mkdirSync(dataDir, { recursive: true });
 
 const db = new Database(join(dataDir, 'guild.db'));

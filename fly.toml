@@ -2,7 +2,7 @@
 # Ejecutar: flyctl launch (si no existe) o flyctl deploy
 
 app = "albion-guild-bot"
-primary_region = "mad"
+primary_region = "cdg"
 
 [build]
 

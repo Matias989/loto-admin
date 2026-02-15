@@ -36,13 +36,13 @@ flyctl launch --no-deploy
 
 Cuando pregunte:
 - **App name**: albion-guild-bot (o el que prefieras)
-- **Region**: mad (Madrid) o la más cercana
+- **Region**: cdg (París), lhr (Londres), fra (Frankfurt), ams (Ámsterdam)
 - **PostgreSQL/Redis**: No
 
 Luego crea el volumen (reemplaza `albion-guild-bot` si usaste otro nombre):
 
 ```bash
-flyctl volumes create data --size 1 --region mad --app albion-guild-bot
+flyctl volumes create data --size 1 --region cdg --app albion-guild-bot
 ```
 
 ## 4. Configurar secretos (variables de entorno)
@@ -96,7 +96,7 @@ Deberías ver: `Bot iniciado como TuBot#1234`
 
 ## Región
 
-Si `mad` no está disponible, prueba: `cdg` (París), `lhr` (Londres), `iad` (Virginia).
+Madrid (`mad`) ya no está disponible. Usa: `cdg` (París), `lhr` (Londres), `fra` (Frankfurt), `ams` (Ámsterdam). El `fly.toml` viene con `cdg`.
 
 ## Solución de problemas
 
